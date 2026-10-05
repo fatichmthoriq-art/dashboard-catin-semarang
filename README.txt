@@ -1,4 +1,4 @@
-DASHBOARD RUANG KENDALI PANSOS/DASHAT 2025 (Opsi C - tema gelap)
+DASHBOARD RUANG KENDALI DASHAT 2025 (Opsi C - tema gelap)
 
 Isi: app.py, requirements.txt, folder .streamlit (tema gelap - WAJIB ikut diupload)
 

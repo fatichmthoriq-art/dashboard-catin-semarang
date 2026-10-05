@@ -1,5 +1,5 @@
 """
-Dashboard Ruang Kendali PANSOS/DASHAT 2025 - Calon Pengantin Kota Semarang
+Dashboard Ruang Kendali DASHAT (Dapur Sehat Atasi Stunting) 2025 - Calon Pengantin Kota Semarang
 Laporan MBKM - Inez Ajeng Puspita (25000123120031), FKM Universitas Diponegoro
 
 Menjalankan:
@@ -17,7 +17,7 @@ st.set_page_config(page_title="Ruang Kendali Catin · Kota Semarang", layout="wi
 
 # ---------------------------------------------------------------------------
 # 1. DATA  (ubah di sini bila data diperbarui)
-#    Sumber: Pendataan Keluarga s.d. 2025 dan Laporan Intervensi PANSOS/DASHAT
+#    Sumber: Pendataan Keluarga s.d. 2025 dan Laporan Intervensi DASHAT
 #    2025, Disdalduk KB Kota Semarang.
 # ---------------------------------------------------------------------------
 @st.cache_data
@@ -123,8 +123,8 @@ def html(s):
 # ---------------------------------------------------------------------------
 kiri, kanan = st.columns([5, 4], vertical_alignment="bottom")
 with kiri:
-    html("""<div class="eyebrow">DISDALDUK KB KOTA SEMARANG · PEMANTAUAN CATIN</div>
-            <div class="judul">Ruang Kendali PANSOS/DASHAT 2025</div>""")
+    html("""<div class="eyebrow">DISDALDUK KB KOTA SEMARANG · DAPUR SEHAT ATASI STUNTING · CATIN</div>
+            <div class="judul">Ruang Kendali DASHAT 2025</div>""")
 with kanan:
     f1, f2 = st.columns([5, 3])
     mode = f1.segmented_control("Tampilan", ["Semua", "Kuadran I", "Perlu evaluasi"],
@@ -319,5 +319,5 @@ with tab3:
     st.download_button("Unduh data (CSV)", t.to_csv(index=False).encode("utf-8"),
                        "data_catin_kecamatan_2025.csv", "text/csv")
 
-html('<div class="sumber">Sumber: Pendataan Keluarga s.d. 2025 · Laporan PANSOS/DASHAT 2025, '
+html('<div class="sumber">Sumber: Pendataan Keluarga s.d. 2025 · Laporan DASHAT 2025, '
      'Disdalduk KB Kota Semarang · Diolah: Inez Ajeng Puspita, MBKM FKM UNDIP</div>')
