@@ -1,11 +1,13 @@
-DASHBOARD RUANG KENDALI DASHAT 2025 (Opsi C - tema gelap)
+SIAP NIKAH SEMARANG - Skrining Catin & Dashboard DASHAT
 
-Isi: app.py, requirements.txt, folder .streamlit (tema gelap - WAJIB ikut diupload)
+Isi: app.py, requirements.txt, folder .streamlit (tema warna - wajib ikut diupload)
 
 Menjalankan di laptop:
   pip install -r requirements.txt
   streamlit run app.py
 
-Upload ke GitHub/Streamlit Cloud: ganti file app.py lama di repository dengan app.py ini,
-ganti juga isi folder .streamlit/config.toml, lalu Commit -> Push origin.
-Streamlit Cloud memperbarui dashboard otomatis.
+Data yang diinput tersimpan di file data_catin.csv (dibuat otomatis di folder yang sama).
+PENTING untuk Streamlit Cloud: file ini bisa terhapus saat aplikasi dimulai ulang/tidur.
+Gunakan tombol "Unduh data (CSV)" secara berkala, dan "Pulihkan dari CSV" bila data hilang.
+
+Mengubah batas skrining: fungsi skrining() di app.py.
